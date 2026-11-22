@@ -42,9 +42,23 @@ El comando `ping -c 10 8.8.8.8` registró **10 paquetes enviados, 10 recibidos y
 
 **Evidencias a consultar:**
 
-![Interfaces IP](../evidencias/02-interfaces-ip.png)
-![10 ping hacia Internet](../evidencias/03-ping-internet.png)
-![Ping desde Windows](../evidencias/04-ping-windows.png)
-![Cinco respaldos](../evidencias/05-backups.png)
+[Interfaces IP]()
+<img width="711" height="547" alt="02-interfaces-ip" src="https://github.com/user-attachments/assets/b3e123c5-cf08-4404-afe8-6cfcb44d65e4" />
+
+[10 ping hacia Internet]()
+
+<img width="611" height="342" alt="03-ping-internet" src="https://github.com/user-attachments/assets/cd33df52-f265-4a73-a0ad-a753fe42f4b6" />
+
+
+[Ping desde Windows]()
+<img width="757" height="408" alt="04-ping-windows" src="https://github.com/user-attachments/assets/911fc007-3497-44a3-83dd-7a8232071699" />
+
+[Cinco respaldos]()
+<img width="607" height="162" alt="05-backups" src="https://github.com/user-attachments/assets/a862b963-c775-4711-9778-9acf14f74376" />
+
+[Uploading 03-ping-internet.png…]()
+<img width="611" height="342" alt="03-ping-internet" src="https://github.com/user-attachments/assets/b38102b8-bf57-44a3-8aef-7610c5139c63" />
+
+
 
 **Incidente y solución:** la máquina virtual quedó bloqueada con mensajes sobre `udev-worker` y `vboxguest`. Reiniciamos VirtualBox, ingresamos de nuevo como `gorel-edu` y verificamos que el servicio DNS siguiera activo. Los archivos respaldados permanecieron disponibles.
