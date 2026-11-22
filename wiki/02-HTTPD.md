@@ -43,8 +43,13 @@ sudo firewall-cmd --list-services
 
 La petición `curl -I http://localhost` devolvió **HTTP/1.1 200 OK**. Desde Windows abrimos `http://web.gorel.lab` y comprobamos la página con los integrantes.
 
-![Apache activo](../evidencias/09-apache-activo.png)
-![HTTP 200](../evidencias/10-apache-http200.png)
-![Página personalizada](../evidencias/11-pagina-web.png)
+[Apache activo]()
+<img width="700" height="491" alt="09-apache-activo" src="https://github.com/user-attachments/assets/1814d05d-fbbe-4365-829b-58daa7aee39a" />
+
+[HTTP 200]()
+<img width="637" height="257" alt="10-apache-http200" src="https://github.com/user-attachments/assets/213ae9f2-fc4e-4a3a-84a1-a8106845a926" />
+
+[Página personalizada]()
+<img width="747" height="856" alt="11-pagina-web" src="https://github.com/user-attachments/assets/a2a3f459-df14-4bad-a281-68df9f4b9c6c" />
 
 **Incidente y solución en la segunda máquina:** el navegador mostró **403 Forbidden**. El registro de Apache reveló la falta del permiso de búsqueda en `/var/www/html/es-ES`; se corrigió esa carpeta con `chmod 755`. En el servidor principal no se produjo este fallo.
