@@ -82,8 +82,13 @@ nslookup web.gorel.lab
 
 Ambas consultas devolvieron `192.168.56.101` después de configurar DNS en Windows.
 
-![Validación DNS](../evidencias/06-zona-dns-ok.png)
-![Servicio named activo](../evidencias/07-named-activo.png)
-![Consulta desde Windows](../evidencias/08-dns-windows.png)
+[Validación DNS]()
+<img width="723" height="222" alt="06-zona-dns-ok" src="https://github.com/user-attachments/assets/3f9dcbce-3f8c-456c-bd28-1ab244cb7287" />
+
+[Servicio named activo]()
+<img width="665" height="510" alt="07-named-activo" src="https://github.com/user-attachments/assets/ca2062da-4e95-4887-bc18-90578988e72e" />
+
+[Consulta desde Windows]()
+<img width="532" height="196" alt="08-dns-windows" src="https://github.com/user-attachments/assets/8b7fddfc-4d17-42a4-976e-0e679d4c1238" />
 
 **Incidente y solución de la práctica en pareja:** en el equipo secundario BIND no iniciaba por escribir `allow-update { node; };`, lo que generó `undefined ACL 'node'`. Se corrigió a `none`. También se ajustó `allow-query` a la red del segundo equipo al recibir `Query refused`. Este incidente no corresponde al servidor principal.
